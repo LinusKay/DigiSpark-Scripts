@@ -1,6 +1,8 @@
 #include "DigiKeyboard.h"
 void setup() {
 }
+// my workmate keeps his screen unlocked all the time
+// security risk !!
 // open notepad, type "lock me", increase font size, bingo
 void loop() {
   #define KEY_PLUS_EQUAL 46
