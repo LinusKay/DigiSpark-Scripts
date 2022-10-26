@@ -1,5 +1,6 @@
 #include "DigiKeyboard.h"
 void setup() {
+  int zoomLevel = 34
 }
 // my workmate keeps his screen unlocked all the time
 // security risk !!
@@ -14,40 +15,9 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   DigiKeyboard.print("lock me");
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
-  DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
+  for(int i = 0; i < zoomLevel; i++) {
+    DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
+  }
   for (;;) {
     /*Stops the digispark from running the scipt again*/
   }
