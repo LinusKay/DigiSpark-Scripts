@@ -8,7 +8,6 @@
 #include "DigiKeyboard.h"
 
 void setup() {
-  #define KEY_N 17
   #define KEY_TAB 43
   #define KEY_PLUS_EQUAL 46
 }
