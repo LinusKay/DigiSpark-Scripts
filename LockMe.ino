@@ -1,12 +1,13 @@
 #include "DigiKeyboard.h"
 void setup() {
-  int zoomLevel = 34
+  // define Plus/Equal key
+  #define KEY_PLUS_EQUAL 46
 }
 // my workmate keeps his screen unlocked all the time
 // security risk !!
 // open notepad, type "lock me", increase font size, bingo
 void loop() {
-  #define KEY_PLUS_EQUAL 46
+  int zoomLevel = 34;
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
@@ -19,6 +20,6 @@ void loop() {
     DigiKeyboard.sendKeyStroke(KEY_PLUS_EQUAL, MOD_CONTROL_LEFT);
   }
   for (;;) {
-    /*Stops the digispark from running the scipt again*/
+    /*Stops the digispark from running the script again*/
   }
 }
